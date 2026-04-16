@@ -76,7 +76,7 @@
             <div class="section-nosotros-text">
                 <div class="nosotros-info">
                     <p>
-                        Fundada en <strong>2010</strong>,<em>IPS Tus Cuidados</em> es una institución prestadora de
+                        Fundada en <strong>2010</strong>,<em> IPS Tus Cuidados</em> es una institución prestadora de
                         servicios de salud comprometida con la experiencia médica y la calidez humana.
                     </p>
                     <p>
@@ -134,6 +134,7 @@
                     <h2>Nuestros Servicios</h2>
                     <p>Para el cursor sobre cada tarjeta para leer más a detalle nuestros servicios</p>
                 </div>
+                <!--Aquí se muestra en formato de tarjeta los servicios que ofrece la IPS-->
                 <div class="carrousel-servicios">
                     <article class="section-card">
                         <img>
@@ -178,10 +179,99 @@
                         </p>
                     </article>
                 </div>
+                <!--Contenedor para distribuir los elementos de mejor forma-->
+                <div class="container-button">
+                    <p>¿No sabes que servicio necesitas?</p>
+                    <a href="#Contacto" class="section-button">📲 Contáctanos para orientación</a>
+                </div>
             </div>
         </section>
+        <!--Sección que tiene conctacto y ubicación de la empresa-->
         <section id="Contacto">
-
+            <div class="container-contacto">
+                <!--lado izquierdo-->
+                <div>
+                    <!--Contenedor en donde se muestra las tarjetas de contacto y ubicación-->
+                    <div class="contact-items">
+                        <div class="contact-card">
+                            <div class="icon-contact-card">
+                                <span>🌎</span>
+                            </div>
+                            <div class="text-contact-card">
+                                <h4>Dirección</h4>
+                                <p>Calle 45 #23-15, Bogotá D.C. Barrio Chapinero, Colombia</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon-contact-card">
+                                <span>📞</span>
+                            </div>
+                            <div class="text-contact-card">
+                                <h4>Teléfonos</h4>
+                                <p>(601) 234-5678 <br> +57 312 536-2935</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon-contact-card">
+                                <span>📨</span>
+                            </div>
+                            <div class="text-contact-card">
+                                <h4>Correo</h4>
+                                <p>info@ipstuscuidados.com <br> citas@ipstuscuidados.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon-contact-card">
+                                <span>🕐</span>
+                            </div>
+                            <div class="text-contact-card">
+                                <h4>Horario</h4>
+                                <p>Lun – Vie: 7:00 am – 6:00 pm <br> Sáb: 8:00 am – 2:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <h3>✏️ Envíanos un mensaje</h3>
+                        <ul>
+                            <div class="number-name">
+                                <li class="form-items">
+                                    <label for="nomber">Nombre completo</label>
+                                    <input type="text" placeholder="Nombre" maxlength="50" id="nomber">
+                                </li>
+                                <li class="form-items">
+                                    <label for="number">Teléfono</label>
+                                    <input type="tel" placeholder="300 000 00 00" maxlength="10" id="number">
+                                </li>
+                            </div>
+                            <li class="form-items">
+                                <label for="mail">Correo electrónico</label>
+                                <input type="email" placeholder="tucorreo@gmail.com" maxlength="60" id="mail">
+                            </li>
+                            <li class="form-items">
+                                <label for="options">Asunto</label>
+                                <select id="options">
+                                    <option>Seleccionar asunto</option>
+                                    <option value="informacion">Información general</option>
+                                    <option value="cita">Agendar cita</option>
+                                    <option value="laboratorio">Resultados de laboratorio</option>
+                                    <option value="pqrs">Quejas y sugerencias</option>
+                                    <option value="convenios-seguros">Convenios y seguros</option>
+                                </select>
+                            </li>
+                            <li class="form-items">
+                                <label for="msg-user">Mensaje</label>
+                                <textarea name="msg-user" placeholder="Escribe tu mensaje..."></textarea>
+                            </li>
+                            <li class="button-form">
+                                <button type="submit">Enviar mensaje</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <!--lado derecho-->
+                <div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
