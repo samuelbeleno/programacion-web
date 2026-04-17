@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPS tus cuidados</title>
     <link rel="icon" type="" href="">
-    
 </head>
 <body>
     <!--Encabezado de la página-->
@@ -14,12 +13,13 @@
             <img src="" alt="Logo pagina web">
             <a href="#Inicio">IPS tus cuidados</a>
         </div>
+        <!--Barra de navegación para desplazarse por la página-->
         <nav>
             <ul class="nav-menu">
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Nosotros">Nosotros</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
-                <li><a href="#Servicio">Servicio</a></li>
+                <li><a href="#Servicios">Servicio</a></li>
             </ul>
         </nav>
     </header>
@@ -190,7 +190,7 @@
         <section id="Contacto">
             <div class="container-contacto">
                 <!--lado izquierdo-->
-                <div>
+                <div class="container-contacto-left">
                     <!--Contenedor en donde se muestra las tarjetas de contacto y ubicación-->
                     <div class="contact-items">
                         <div class="contact-card">
@@ -230,6 +230,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Formulario de la página web-->
                     <form>
                         <h3>✏️ Envíanos un mensaje</h3>
                         <ul>
@@ -268,11 +269,76 @@
                         </ul>
                     </form>
                 </div>
-                <!--lado derecho-->
-                <div>
+                <!--Lado derecho-->
+                <!--Contenedor donde se muestra la ubicación y las redes sociales de la IPS-->
+                <div class="container-contacto-right">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.786979764813!2d-74.06851828889899!3d4.632056995323282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2f5031782f%3A0xdaf6c0c8afa1d43c!2zQ2wuIDQ1ICMgOS0yMywgQ2hhcGluZXJvLCBCb2dvdMOhLCBELkMuLCBCb2dvdMOhLCBCb2dvdMOhLCBELkMu!5e0!3m2!1ses-419!2sco!4v1776391875953!5m2!1ses-419!2sco" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                    <div class="social-media">
+                        <nav class="social-media-links">
+                            <a class="facebook" href="https://www.facebook.com/?locale=es_LA"></a>
+                            <a class="instagram" href="https://www.instagram.com/?hl=es"></a>
+                            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es"></a>
+                            <a class="youtube" href="https://www.youtube.com/@samuelbelenomejia"></a>
+                            <a class="tiktok" href="https://www.tiktok.com/es-419/"></a>
+                        </nav>
+                    </div>
+                    <div class="emergency-card">
+                        <div class="icon-emergency-card">
+                        </div>
+                        <div class="info-emergency-card">
+                            <h4 class="info-emergency-card-title">Urgencias las 24 horas del día</h4>
+                            <p class="info-emergency-card-text">
+                                Línea de emergencias <br>
+                                <span class="emergency-card-number">+57 312 536-2935</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer-info">
+                <!--Columna del logo y eslogan de la IPS-->
+                <div>   
+                    <div class="logo-header">
+                        <img src="" alt="Logo pagina web">
+                        <p>IPS tus cuidados</p>
+                    </div>
+                    <p>Comprometidos con tu salud visual y bienestar integral desde 2010</p>
+                </div>
+                <!--Columna de servicios destacados que ofrece la IPS-->
+                <div>
+                    <h3>Especialidades</h3>
+                    <ul>
+                        <li><a href="#Servicios">Oftamología</a></li>
+                        <li><a href="#Servicios">Optometría</a></li>
+                        <li><a href="#Servicios">Laboratorio clínico</a></li>
+                    </ul>
+                </div>
+                <!--Columna del marco legal-->
+                <div>
+                    <h3>Legal</h3>
+                    <ul>
+                        <li>Política de Privacidad</li>
+                        <li>Términos de Uso</li>
+                        <li>Política de Cookies</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Contenedor que tiene la frase de avisos de derechos de autor-->
+            <div class="footer-bottom">
+                <p>&copy; 2026 IPS Tus Cuidados. Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
