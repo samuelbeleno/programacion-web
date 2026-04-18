@@ -39,7 +39,7 @@
                 <div class="hero-subtitle">
                     <p>
                         Centro médico especializado con tecnología de vanguardia en
-                        oftamología, optemetría y salud integral para toda tu familia.
+                        oftamología, optometría y salud integral para toda tu familia.
                     </p>
                 </div>
                 <div class="hero-buttons">
@@ -113,15 +113,13 @@
                     <article class="cards">
                         <img>
                         <h3>Valores</h3>
-                        <p> 
-                            <ul>
-                                <li>Excelencia médica</li>
-                                <li>Integridad y ética</li>
-                                <li>Calidez humana</li>
-                                <li>innovación constante</li>
-                                <li>Compromiso social</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li>Excelencia médica</li>
+                            <li>Integridad y ética</li>
+                            <li>Calidez humana</li>
+                            <li>innovación constante</li>
+                            <li>Compromiso social</li>
+                        </ul>
                     </article>
                 </div>
             </div>
@@ -145,9 +143,9 @@
                     </article>
                     <article class="section-card">
                         <img>
-                        <h3>Oftamología</h3>
+                        <h3>Oftalmología</h3>
                         <p>
-                            Diagnóstico y tratamiento de enfermedades oculares: Cataratas, glaucoma, retina y cirugía reflectiva.
+                            Diagnóstico y tratamiento de enfermedades oculares: Cataratas, glaucoma, retina y cirugía refractiva.
                         </p>
                     </article>
                     <article class="section-card">
@@ -161,14 +159,14 @@
                         <img>
                         <h3>Laboratorio clínico</h3>
                         <p>
-                            Análisis clínico completo: Hemograma, uroanálisis, bioquimica, hormonas y más. Entrega rápida de resultados.
+                            Análisis clínico completo: Hemograma, uroanálisis, bioquímica, hormonas y más. Entrega rápida de resultados.
                         </p>
                     </article>
                     <article class="section-card">
                         <img>
                         <h3>Tratamientos Especializados</h3>
                         <p>
-                            Contamos con tratamientos para afecciones como ojo seco, fatiga visual, rehabilitacióm de baja visión y entrenamiento visual.
+                            Contamos con tratamientos para afecciones como ojo seco, fatiga visual, rehabilitación de baja visión y entrenamiento visual.
                         </p>
                     </article>
                     <article class="section-card">
@@ -234,16 +232,18 @@
                     <form>
                         <h3>✏️ Envíanos un mensaje</h3>
                         <ul>
-                            <div class="number-name">
-                                <li class="form-items">
-                                    <label for="nomber">Nombre completo</label>
-                                    <input type="text" placeholder="Nombre" maxlength="50" id="nomber">
-                                </li>
-                                <li class="form-items">
-                                    <label for="number">Teléfono</label>
-                                    <input type="tel" placeholder="300 000 00 00" maxlength="10" id="number">
-                                </li>
-                            </div>
+                            <li class="form-items">
+                                <div class="number-name">
+                                    <div class="nomber-container">
+                                        <label for="nomber">Nombre completo</label>
+                                        <input type="text" placeholder="Nombre" maxlength="50" id="nomber">
+                                    </div>
+                                    <div class="number-container">
+                                        <label for="number">Teléfono</label>
+                                        <input type="tel" placeholder="300 000 00 00" maxlength="10" id="number">
+                                    </div>
+                                </div>
+                            </li>
                             <li class="form-items">
                                 <label for="mail">Correo electrónico</label>
                                 <input type="email" placeholder="tucorreo@gmail.com" maxlength="60" id="mail">
@@ -251,7 +251,7 @@
                             <li class="form-items">
                                 <label for="options">Asunto</label>
                                 <select id="options">
-                                    <option>Seleccionar asunto</option>
+                                    <option selected disabled>Seleccionar asunto</option>
                                     <option value="informacion">Información general</option>
                                     <option value="cita">Agendar cita</option>
                                     <option value="laboratorio">Resultados de laboratorio</option>
@@ -284,11 +284,11 @@
                     </div>
                     <div class="social-media">
                         <nav class="social-media-links">
-                            <a class="facebook" href="https://www.facebook.com/?locale=es_LA"></a>
-                            <a class="instagram" href="https://www.instagram.com/?hl=es"></a>
-                            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es"></a>
-                            <a class="youtube" href="https://www.youtube.com/@samuelbelenomejia"></a>
-                            <a class="tiktok" href="https://www.tiktok.com/es-419/"></a>
+                            <a class="facebook" href="https://www.facebook.com/?locale=es_LA" aria-label="Botón de enlace para Facebook"></a>
+                            <a class="instagram" href="https://www.instagram.com/?hl=es" aria-label="Botón de enlace para Instagram"></a>
+                            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es" aria-label="Botón de enlace para Whatsapp"></a>
+                            <a class="youtube" href="https://www.youtube.com/@samuelbelenomejia" aria-label="Botón de enlace para Youtube"></a>
+                            <a class="tiktok" href="https://www.tiktok.com/es-419/" aria-label="Botón de enlace para Tiktok"></a>
                         </nav>
                     </div>
                     <div class="emergency-card">
@@ -305,40 +305,40 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="footer-info">
-                <!--Columna del logo y eslogan de la IPS-->
-                <div>   
-                    <div class="logo-header">
-                        <img src="" alt="Logo pagina web">
-                        <p>IPS tus cuidados</p>
-                    </div>
-                    <p>Comprometidos con tu salud visual y bienestar integral desde 2010</p>
-                </div>
-                <!--Columna de servicios destacados que ofrece la IPS-->
-                <div>
-                    <h3>Especialidades</h3>
-                    <ul>
-                        <li><a href="#Servicios">Oftamología</a></li>
-                        <li><a href="#Servicios">Optometría</a></li>
-                        <li><a href="#Servicios">Laboratorio clínico</a></li>
-                    </ul>
-                </div>
-                <!--Columna del marco legal-->
-                <div>
-                    <h3>Legal</h3>
-                    <ul>
-                        <li>Política de Privacidad</li>
-                        <li>Términos de Uso</li>
-                        <li>Política de Cookies</li>
-                    </ul>
-                </div>
-            </div>
-            <!--Contenedor que tiene la frase de avisos de derechos de autor-->
-            <div class="footer-bottom">
-                <p>&copy; 2026 IPS Tus Cuidados. Todos los derechos reservados.</p>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div class="footer-info">
+            <!--Columna del logo y eslogan de la IPS-->
+            <div>   
+                <div class="logo-header">
+                    <img src="" alt="Logo pagina web">
+                    <p>IPS tus cuidados</p>
+                </div>
+                <p>Comprometidos con tu salud visual y bienestar integral desde 2010</p>
+            </div>
+            <!--Columna de servicios destacados que ofrece la IPS-->
+            <div>
+                <h3>Especialidades</h3>
+                <ul>
+                    <li><a href="#Servicios">Oftamología</a></li>
+                    <li><a href="#Servicios">Optometría</a></li>
+                    <li><a href="#Servicios">Laboratorio clínico</a></li>
+                </ul>
+            </div>
+                <!--Columna del marco legal-->
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li>Política de Privacidad</li>
+                    <li>Términos de Uso</li>
+                    <li>Política de Cookies</li>
+                </ul>
+            </div>
+        </div>
+            <!--Contenedor que tiene la frase de avisos de derechos de autor-->
+        <div class="footer-bottom">
+                <p>&copy; 2026 IPS Tus Cuidados. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
