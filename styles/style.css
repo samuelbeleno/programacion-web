@@ -1,0 +1,55 @@
+/*Definición de variables globales, para decoración y evitar la repetición*/
+:root {
+    --color_principal: #084BD4;
+    --color_secundario: #D5DDE3;
+    --fuente-html: 'Roboto Mono', monospace;
+    --color_terciario: #3E3E5C;
+    --letras_blancas: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-html);
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-items, .a-logo-header {
+    text-decoration: none;
+    color: var(--letras_blancas);
+}
+
+header {
+    display: flex;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color_terciario);
+    height: 75px;
+    color: var(--letras_blancas);
+}
+
+.img-logo-header {
+    height: 75px;
+    width: 125px;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    color: var(--letras_blancas);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
