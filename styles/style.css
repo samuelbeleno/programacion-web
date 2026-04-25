@@ -292,6 +292,11 @@ header {
     padding-right: 1em;
 }
 
+.carrousel-servicios:hover .group-section-card {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
 /*Animación para el carrousel*/
 
 @keyframes spin {
