@@ -107,7 +107,7 @@
                         </p>
                     </article>
                     <article class="cards">
-                        <img src="images/vision_pagina.avif" alt="Imagen de una bombilla encendida" class="cards-img">
+                        <img  src="images/vision_pagina.avif" alt="Imagen de una bombilla encendida" class="cards-img">
                         <h3>Visión</h3>
                         <p>
                             Ser en 2030 la IPS lider en salud visual de Colombia, reconocidad por la excelencia
@@ -117,12 +117,12 @@
                     <article class="cards">
                         <img src="images/valores.png" alt="Imagen de una mano sosteniendo un corazón" class="cards-img">
                         <h3>Valores</h3>
-                        <ul>
-                            <li>Excelencia médica</li>
-                            <li>Integridad y ética</li>
-                            <li>Calidez humana</li>
-                            <li>innovación constante</li>
-                            <li>Compromiso social</li>
+                        <ul class="valores-list">
+                            <li class="valores-items">Excelencia médica</li>
+                            <li class="valores-items">Integridad y ética</li>
+                            <li class="valores-items">Calidez humana</li>
+                            <li class="valores-items">innovación constante</li>
+                            <li class="valores-items">Compromiso social</li>
                         </ul>
                     </article>
                 </div>
@@ -233,7 +233,7 @@
                         </div>
                     </div>
                     <!--Formulario de la página web-->
-                    <form >
+                    <form>
                         <h3 class="title-form">✏️ Envíanos un mensaje</h3>
                         <ul>
                             <li class="form-items">
@@ -265,10 +265,10 @@
                             </li>
                             <li class="form-items">
                                 <label for="msg-user">Mensaje</label>
-                                <textarea name="msg-user" placeholder="Escribe tu mensaje..."></textarea>
+                                <textarea name="msg-user" placeholder="Escribe tu mensaje..." id="text-msg"></textarea>
                             </li>
                             <li class="button-form">
-                                <button type="submit">Enviar mensaje</button>
+                                <button type="submit" id="submit-button">Enviar mensaje</button>
                             </li>
                         </ul>
                     </form>
@@ -288,11 +288,11 @@
                     </div>
                     <div class="social-media">
                         <nav class="social-media-links">
-                            <a class="facebook" href="https://www.facebook.com/?locale=es_LA"><img src="images/icon-facebook.svg" alt="Botón de enlace para Facebook"></a>
-                            <a class="instagram" href="https://www.instagram.com/?hl=es"><img src="images/icons-instagram.svg" alt="Botón de enlace para Instagram"></a>
-                            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es"><img src="images/icon-whatsapp.svg" alt="Botón de enlace para Whatsapp"></a>
-                            <a class="youtube" href="https://www.youtube.com/@samuelbelenomejia"><img src="images/icon-youtube.svg" alt="Botón de enlace para Youtube"></a>
-                            <a class="tiktok" href="https://www.tiktok.com/es-419/"><img src="images/icon-tiktok.svg" alt="Botón de enlace para Tiktok"></a>
+                            <a class="facebook" href="https://www.facebook.com/?locale=es_LA" rel="noreferrer" target="_blank"><img src="images/icon-facebook.svg" alt="Botón de enlace para Facebook"></a>
+                            <a class="instagram" href="https://www.instagram.com/?hl=es" rel="noreferrer" target="_blank"><img src="images/icons-instagram.svg" alt="Botón de enlace para Instagram"></a>
+                            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es" rel="noreferrer" target="_blank"><img src="images/icon-whatsapp.svg" alt="Botón de enlace para Whatsapp"></a>
+                            <a class="youtube" href="https://www.youtube.com/@samuelbelenomejia" rel="noreferrer" target="_blank"><img src="images/icon-youtube.svg" alt="Botón de enlace para Youtube"></a>
+                            <a class="tiktok" href="https://www.tiktok.com/es-419/" rel="noreferrer" target="_blank"><img src="images/icon-tiktok.svg" alt="Botón de enlace para Tiktok"></a>
                         </nav>
                     </div>
                     <div class="emergency-card">
@@ -319,7 +319,7 @@
                     <img src="images/imagen_hero.png" alt="Logo pagina web" class="logo-footer">
                     <p>IPS tus cuidado</p>
                 </div>
-                <!--<p>Comprometidos con tu salud visual y bienestar integral desde 2010</p>-->
+                <p>Comprometidos con tu salud visual y bienestar integral desde 2010</p>
             </div>
             <!--Columna de servicios destacados que ofrece la IPS-->
             <div class="featured-services">

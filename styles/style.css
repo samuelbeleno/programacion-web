@@ -113,7 +113,7 @@ header {
     margin-left: 50px;
 }
 
-.hero-title, .hero-badge, .stat-num {
+.hero-title, .hero-badge, .stat-num, .legal-list {
     color: var(--color_secundario);
 }
 
@@ -155,10 +155,38 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 200px;
     gap: 50px;
     padding-left: 200px;
     padding-right: 200px;
+    padding-bottom: 200px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    max-height: 600px;
+    padding: 20px;
+    text-align: left;
+    border-top: 8px solid rgba(93, 183, 238, 0.757);
+    border-left: 2px solid #3E3E5C;
+    border-bottom: 2px solid #3E3E5C;
+    border-right: 2px solid #3E3E5C;
+    border-radius: 8px;
+    background-color: rgb(184, 237, 219);
+}
+
+.section-nosotros-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.valores-items {
+    list-style-type: "✨";
 }
 
 .section-title-nosotros {
@@ -169,28 +197,72 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-left: 75px;
 }
 
 .section-nosotros-tags {
     margin-top: 20px;
+    padding-left: 75px;
+    display: flex;
+    gap: 25px;
+}
+
+.tags {
+    background-color: rgb(44, 186, 44);
+    padding: 5px;
+    border-radius: 8px;
+    color: var(--letras_blancas);
 }
 
 .section-nosotros-cards {
     display: flex;
     margin-top: 20px;
     gap: 20px;
+    justify-content: space-around;
 }
 
 .cards-img {
-    width: 150x;
+    width: 100x;
     height: 150px;
 }
 
 /*Diseño sección servicios*/
+#Servicios {
+    background-color: var(--color_terciario);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.container-servicios, .servicios-header {
+    display: flex;  
+    flex-direction: column;
+}
+
+.servicios-header {
+    gap: 30px;
+}
+
+.container-servicios {
+    gap: 70px;
+}
+
+.section-card {
+    background-color:rgb(42, 102, 131);
+    border-radius: 8px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--letras_blancas);
+}
 
 .section-card-img {
     width: 150px;
     height: 150px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .carrousel-servicios {
@@ -207,13 +279,42 @@ header {
     margin-top: 30px;
 }
 
+
 /*Diseño sección conctactos*/
 
 #Contacto {
-    padding-top: 30px;
+    padding-top: 120px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-items {
+    padding-top: 20px;
+}
+
+#nomber, #number, #mail, #options, #text-msg, #submit-button {
+    padding: 8px;
+    font-family: var(--fuente-html);
+    font-size: 14px;
+}
+
+#nomber, #number {
+    width: 320px;
+}
+
+#text-msg {
+    height: 100px;
+}
+
+.button-form {
+    padding-top: 15px;
 }
 
 .container-contacto {
@@ -238,6 +339,7 @@ header {
     max-height: 300px;
     border: solid var(--color_principal);
     margin: 15px;
+    border-radius: 8px;
 }
 
 .number-name {
@@ -263,13 +365,22 @@ header {
 .emergency-card {
     display: flex;
     justify-content: space-evenly;
-    gap: 30px;
-    padding-top: 30px;
+    gap: 60px;
+    margin-top: 70px;
+    padding: 10px;
+    border: solid orange;
+    border-radius: 8px;
+    color: var(--letras_blancas);
+    background-color: orange;
 }
 
 .social-media, .emergency-card {
     display: flex;
     justify-content: flex-start;
+}
+
+.social-media {
+    padding-top: 30px;
 }
 
 /*Footer*/
@@ -282,6 +393,7 @@ footer {
 .footer-info {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 75px;
 }
 
 .logo-header {
@@ -290,6 +402,11 @@ footer {
 
 .logo-slogan-footer {
     display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    text-align: left;
+    width: 400px;
+    gap: 20px;
 }
 
 .featured-services, .legal-framework {
@@ -302,4 +419,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.footer-bottom {
+    padding-left: 250px;
 }
