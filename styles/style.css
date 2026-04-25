@@ -130,7 +130,7 @@ header {
 }
 
 .hero-subtitle-text, .stat-label {
-    color: var(--color_terciario);
+    color: var(--letras_blancas);
 }
 
 .hero-badge {
@@ -240,10 +240,19 @@ header {
 
 .servicios-header {
     gap: 30px;
+    color: var(--letras_blancas);
 }
 
 .container-servicios {
     gap: 70px;
+}
+
+.tag-servicios {
+    background-color: rgb(25, 146, 146);
+    padding: 8px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 8px;
 }
 
 .section-card {
@@ -267,7 +276,27 @@ header {
 
 .carrousel-servicios {
     display: flex;
-    gap: 40px;
+    overflow-x: auto;
+}
+
+.carrousel-servicios::-webkit-scrollbar {
+    display: none;
+}
+
+.group-section-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 45s infinite linear;
+    padding-right: 1em;
+}
+
+/*Animación para el carrousel*/
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
 
 .container-servicios {
@@ -277,6 +306,14 @@ header {
 .container-button {
     text-align: center;
     margin-top: 30px;
+    color: var(--letras_blancas);
+
+}
+
+.section-button {
+    text-decoration: none;
+    color: var(--letras_blancas);
+    margin-top: 10px;
 }
 
 
