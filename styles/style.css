@@ -34,11 +34,12 @@ li {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     height: 150px;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--color_terciario);
-    height: 75px;
+    height: auto;
     color: var(--letras_blancas);
 }
 
@@ -55,7 +56,32 @@ header {
 
 .nav-menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+}
+
+.nav-menu-items:hover,
+.especialidades-items:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#sign-in {
+    padding: 7px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.4s ease;
+    color: var(--letras_blancas);
+    background-color: #0545c7;
+}
+
+#sign-in:hover {
+    transform: scale(1.035);
+    background-color: rgb(117, 255, 239);
 }
 
 /*Estilos de la sección inicio*/
@@ -73,7 +99,8 @@ header {
 .hero-info {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 35px;
     padding-top: 75px;
     width: 40%;
 }
@@ -90,6 +117,14 @@ header {
     margin-left: 60px;
 }
 
+#date {
+    transition: 0.6s;
+}
+
+#date:hover {
+    color: blue;
+}
+
 #date, .services {
     padding: 8px;
     border-bottom-left-radius: 20px;
@@ -101,10 +136,21 @@ header {
 
 #date {
     border: none;
+    transition: transform 0.4s ease;
+}
+
+#date:hover {
+    transform: scale(1.025);
 }
 
 .services {
     border: solid var(--color_secundario);
+    transition: transform 0.4s ease;
+}
+
+.services:hover {
+    background-color: rgb(133, 129, 124);
+    transform: scale(1.025);
 }
 
 .hero-items  {
@@ -154,6 +200,7 @@ header {
 #Nosotros {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 200px;
     gap: 50px;
@@ -177,6 +224,11 @@ header {
     border-right: 2px solid #3E3E5C;
     border-radius: 8px;
     background-color: rgb(184, 237, 219);
+    transition: transform 0.5s ease;
+}
+
+.cards:hover {
+    transform: scale(1.050);
 }
 
 .section-nosotros-text {
@@ -212,6 +264,12 @@ header {
     padding: 5px;
     border-radius: 8px;
     color: var(--letras_blancas);
+    transition: transform 0.6s ease box-shadow 0.6s ease;
+}
+
+.tags:hover {
+    transform: translate(-3px, -4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .section-nosotros-cards {
@@ -222,7 +280,7 @@ header {
 }
 
 .cards-img {
-    width: 100x;
+    width: 100px;
     height: 150px;
 }
 
@@ -264,6 +322,12 @@ header {
     flex-direction: column;
     gap: 25px;
     color: var(--letras_blancas);
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .section-card-img {
@@ -382,6 +446,12 @@ form {
     border: solid var(--color_principal);
     margin: 15px;
     border-radius: 8px;
+    background-color: rgb(181, 255, 230);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.025);
 }
 
 .number-name {
@@ -414,6 +484,11 @@ form {
     border-radius: 8px;
     color: var(--letras_blancas);
     background-color: orange;
+    transition: transform 0.4s ease;
+}
+
+.emergency-card:hover {
+    transform: scale(1.025);
 }
 
 .social-media, .emergency-card {
@@ -423,6 +498,15 @@ form {
 
 .social-media {
     padding-top: 30px;
+    transition: transform 0.4s ease;
+}
+
+.facebook-img:hover,
+.instagram-img:hover,
+.whatsapp-img:hover,
+.youtube-img:hover,
+.tiktok-img:hover {
+    transform: scale(1.025);
 }
 
 /*Footer*/
@@ -449,6 +533,7 @@ footer {
     text-align: left;
     width: 400px;
     gap: 20px;
+    color: var(--letras_blancas);
 }
 
 .featured-services, .legal-framework {
@@ -465,4 +550,5 @@ footer {
 
 .footer-bottom {
     padding-left: 250px;
+    color: var(--letras_blancas);
 }
