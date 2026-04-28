@@ -28,6 +28,7 @@
                 <li><a href="#Servicios" class="nav-menu-items">Servicio</a></li>
             </ul>
         </nav>
+        <button id="sign-in" type="button">Inicia sesión</button>
     </header>
     <main>
         <!--Hero del sitio web-->
@@ -335,11 +336,11 @@
                     </div>
                     <div class="social-media">
                         <nav class="social-media-links">
-                            <a class="facebook" href="https://www.facebook.com/?locale=es_LA" rel="noreferrer" target="_blank"><img src="images/icon-facebook.svg" alt="Botón de enlace para Facebook"></a>
-                            <a class="instagram" href="https://www.instagram.com/?hl=es" rel="noreferrer" target="_blank"><img src="images/icons-instagram.svg" alt="Botón de enlace para Instagram"></a>
-                            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es" rel="noreferrer" target="_blank"><img src="images/icon-whatsapp.svg" alt="Botón de enlace para Whatsapp"></a>
-                            <a class="youtube" href="https://www.youtube.com/@samuelbelenomejia" rel="noreferrer" target="_blank"><img src="images/icon-youtube.svg" alt="Botón de enlace para Youtube"></a>
-                            <a class="tiktok" href="https://www.tiktok.com/es-419/" rel="noreferrer" target="_blank"><img src="images/icon-tiktok.svg" alt="Botón de enlace para Tiktok"></a>
+                            <a class="facebook" href="https://www.facebook.com/?locale=es_LA" rel="noreferrer" target="_blank"><img class="facebook-img" src="images/icon-facebook.svg" alt="Botón de enlace para Facebook"></a>
+                            <a class="instagram" href="https://www.instagram.com/?hl=es" rel="noreferrer" target="_blank"><img class="instagram-img" src="images/icons-instagram.svg" alt="Botón de enlace para Instagram"></a>
+                            <a class="whatsapp" href="https://www.whatsapp.com/?lang=es" rel="noreferrer" target="_blank"><img class="whatsapp-img" src="images/icon-whatsapp.svg" alt="Botón de enlace para Whatsapp"></a>
+                            <a class="youtube" href="https://www.youtube.com/@samuelbelenomejia" rel="noreferrer" target="_blank"><img class="youtube-img" src="images/icon-youtube.svg" alt="Botón de enlace para Youtube"></a>
+                            <a class="tiktok" href="https://www.tiktok.com/es-419/" rel="noreferrer" target="_blank"><img class="tiktok-img" src="images/icon-tiktok.svg" alt="Botón de enlace para Tiktok"></a>
                         </nav>
                     </div>
                     <div class="emergency-card">
@@ -392,5 +393,53 @@
                 <p>&copy; 2026 IPS Tus Cuidados. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <dialog id="sign-in-registrer-forms" open>
+        <div class="container-form-sign-in">
+            <form action="" class="log-in">
+                <h2>Iniciar sesión</h2>
+                <div class="social-networks">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+                <span>Usa tu correo electrónico y contraseña</span>
+                <div class="container-input">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                    <input type="email" name="mail" id="mail-input" placeholder="correo">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="key-outline"></ion-icon>
+                    <input type="password" name="pswd" id="pswd-input" placeholder="contraseña">
+                </div>
+                <a href="#">¿Has olvidado tu contraseña?</a>
+                <button id="btn-sign-in">INICIAR SESIÓN</button>
+            </form>
+        </div>
+        <div class="container-form-registrer">
+            <form action="" class="sign-up">
+                <h2>Registrate</h2>
+                <div class="social-networks">
+                    <ion-icon name="logo-google"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+                <span>Use su correo electrónico para registrarse</span>
+                <div class="container-input">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" name="name-user" id="name-input-r" placeholder="nombre de usuario">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                    <input type="email" name="mail" id="mail-input-r" placeholder="correo">
+                </div>
+                <div class="container-input">
+                    <ion-icon name="key-outline"></ion-icon>
+                    <input type="password" name="pswd" id="pswd-input-r" placeholder="contraseña">
+                </div>
+                <button id="btn-sign-up">REGISTRARSE</button>
+            </form>
+        </div>
+    </dialog>
+    <!--Para importar iconos para el modal de inicio de sesión-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
