@@ -214,8 +214,8 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    max-width: 400px;
-    max-height: 600px;
+    max-width: 250px;
+    max-height: 500px;
     padding: 20px;
     text-align: left;
     border-top: 8px solid rgba(93, 183, 238, 0.757);
@@ -551,4 +551,145 @@ footer {
 .footer-bottom {
     padding-left: 250px;
     color: var(--letras_blancas);
+}
+
+/*Modal iniciar sesión/registrar*/
+
+#sign-in-registrer-forms {
+    width: 500px;
+    height: 60%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 40%;
+    border: none
+}
+
+.container-form-sign-in {
+    display: block;
+}
+
+.container-form-registrer {
+    display: none; /*Este formulario estará oculto por defecto*/
+}
+
+.container-form-sign-in form, .container-form-registrer form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.container-title h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container-title ion-icon {
+    font-size: 32px;
+    display: block;
+}
+
+.container-title ion-icon:hover {
+    color: red;
+}
+
+#close-modal {
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+}
+
+.social-networks {
+    font-size: 20px;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.social-networks ion-icon {
+    border: 1px solid #C9CCCB;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    transform: transform 0.5s ease;
+}
+
+.social-networks ion-icon:hover {
+    transform: scale(1.025);
+}
+
+.container-form-sign-in span, .container-form-registrer span {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.container-input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    background-color: #EEEEEE;
+}
+
+.container-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit; /*Color heredado de su padre*/
+}
+
+.container-form-sign-in a {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.container-form-sign-in a:hover {
+    color: var(--color_principal);
+}
+
+#btn-sign-in, #btn-sign-up {
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #3AB397;
+    color: white;
+}
+
+.change-forms {
+    display: flex;
+    gap: 5px;
+}
+
+#btn-registrer, #btn-log-in {
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#btn-registrer:hover, 
+#btn-log-in:hover {
+    color: var(--color_principal);
 }
