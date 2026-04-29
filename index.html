@@ -393,10 +393,13 @@
                 <p>&copy; 2026 IPS Tus Cuidados. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <dialog id="sign-in-registrer-forms" open>
+    <dialog id="sign-in-registrer-forms">
         <div class="container-form-sign-in">
             <form action="" class="log-in">
-                <h2>Iniciar sesión</h2>
+                <div class="container-title">
+                    <h2>Iniciar sesión</h2>
+                    <button id="close-modal"><ion-icon name="close-outline"></ion-icon></button>
+                </div>
                 <div class="social-networks">
                     <ion-icon name="logo-google"></ion-icon>
                     <ion-icon name="logo-facebook"></ion-icon>
@@ -412,11 +415,15 @@
                 </div>
                 <a href="#">¿Has olvidado tu contraseña?</a>
                 <button id="btn-sign-in">INICIAR SESIÓN</button>
+                <span class="change-forms">¿Sin cuenta aún?<button type="button" id="btn-registrer">Crea una cuenta</button></span>
             </form>
         </div>
         <div class="container-form-registrer">
             <form action="" class="sign-up">
-                <h2>Registrate</h2>
+                <div class="container-title">
+                    <h2>Registrarse</h2>
+                    <button id="close-modal"><ion-icon name="close-outline"></ion-icon></button>
+                </div>
                 <div class="social-networks">
                     <ion-icon name="logo-google"></ion-icon>
                     <ion-icon name="logo-facebook"></ion-icon>
@@ -435,11 +442,14 @@
                     <input type="password" name="pswd" id="pswd-input-r" placeholder="contraseña">
                 </div>
                 <button id="btn-sign-up">REGISTRARSE</button>
+                <span class="change-forms">¿Ya tienes cuenta? <button type="button" id="btn-log-in">Inicia sesión</button></span>
             </form>
         </div>
     </dialog>
     <!--Para importar iconos para el modal de inicio de sesión-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Script de javascript-->
+    <script src="script/script.js"></script>
 </body>
 </html>
